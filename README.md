@@ -1,6 +1,6 @@
 # Fastapi SSE Notify
 
-Proyecto demostrativo de notificaciones en tiempo real utilizando FastAPI y SSE. Cuenta con un backend en Python y un frontend basado en Jinja2, Bootstrap y JavaScript. Cada 10 segundos se generan notificaciones para dos usuarios (IDs "1" y "2") y se transmiten en formato JSON mediante SSE, permitiendo la reconexión automática en caso de pérdida de conexión.
+Proyecto demostrativo de notificaciones en tiempo real utilizando FastAPI y Server-Sent Events (SSE). Cuenta con un backend en Python y un frontend basado en Jinja2, Bootstrap y JavaScript. Cada 10 segundos se generan notificaciones para dos usuarios (IDs "1" y "2") y se transmiten en formato JSON mediante SSE, permitiendo la reconexión automática en caso de pérdida de conexión.
 
 ## SSE
 Esta basada en event stream
@@ -8,7 +8,7 @@ Esta basada en event stream
 ## Características
 
 - **Backend en FastAPI:** Genera notificaciones cada 10 segundos para cada usuario.
-- **Streaming de notificaciones:** Uso de SSE para enviar notificaciones en tiempo real.
+- **Streaming de notificaciones:** Uso de Server-Sent Events (SSE) para enviar notificaciones en tiempo real.
 - **Frontend dinámico:** Plantilla HTML con Jinja2, diseño con Bootstrap y JavaScript moderno para consumir el stream SSE.
 - **Identificación de usuario:** El usuario se identifica mediante un parámetro `user_id` en la URL, filtrando sus notificaciones.
 
